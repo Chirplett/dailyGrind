@@ -90,7 +90,7 @@ class MainViewController: UIViewController {
         
         self.navigationItem.title = "\(gotName)님의 다마고치"
         
-        let bubbleMessages: [String] = ["\(gotName)님, 보고싶었어요~", "저 배고파요, \(gotName)님!", "오늘 하루 어땠어요, \(gotName)님?", "물 좀 주세요~ \(gotName)님!", "저 이제 다 큰 것 같아요, \(gotName)님!", "바깥 날씨는 어때요, \(gotName)님?", "오늘따라 아무것도 하기 싫어요, \(gotName)님"]
+        let bubbleMessages: [String] = ["\(gotName)님, 보고싶었어요!", "저 배고파요, \(gotName)님!", "오늘 하루 어땠어요, \(gotName)님?", "물 좀 주세요~ \(gotName)님!", "저 이제 다 큰 것 같아요, \(gotName)님!", "바깥 날씨는 어때요, \(gotName)님?", "오늘따라 아무것도 하기 싫어요, \(gotName)님"]
         
         bubbleLabel.text = bubbleMessages.randomElement()
         
