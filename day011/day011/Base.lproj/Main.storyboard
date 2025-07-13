@@ -20,44 +20,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="qG0-Rx-HGM" kind="relationship" relationship="viewControllers" id="qMz-uU-L5J"/>
-                        <segue destination="kFn-zY-5wc" kind="relationship" relationship="viewControllers" id="QMw-Py-MiV"/>
+                        <segue destination="YFF-w9-3Me" kind="relationship" relationship="viewControllers" id="QMw-Py-MiV"/>
+                        <segue destination="e6f-BO-TYs" kind="relationship" relationship="viewControllers" id="2U0-JG-fHv"/>
+                        <segue destination="aZ0-8s-b2C" kind="relationship" relationship="viewControllers" id="QPq-ow-vLU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vn8-gH-xUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1001" y="-273"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="TVg-5b-1rY">
-            <objects>
-                <viewController id="cHE-M3-gvd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ec5-bL-hng">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ie8-mS-iBF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fvN-Ex-IOQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kee-IF-2cE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1949" y="1425"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="KBl-yh-L0T">
-            <objects>
-                <viewController id="YrJ-Ev-dd4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uVl-ET-LXQ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="50k-7l-Ihb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UH4-i1-gla"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fuy-Vl-rhP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1949" y="2131"/>
         </scene>
         <!--쇼핑-->
         <scene sceneID="Hgu-1E-rc2">
@@ -170,9 +140,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Dl-rd-HYP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949" y="-273"/>
+            <point key="canvasLocation" x="2888" y="-273"/>
         </scene>
-        <!--매거진-->
+        <!--Magazine Table View Controller-->
         <scene sceneID="4hF-xG-w61">
             <objects>
                 <tableViewController id="kFn-zY-5wc" customClass="MagazineTableViewController" customModule="day011" customModuleProvider="target" sceneMemberID="viewController">
@@ -241,15 +211,119 @@
                             <outlet property="delegate" destination="kFn-zY-5wc" id="18D-kh-rTe"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="매거진" image="magazine" catalog="system" id="ieQ-oG-8cd"/>
+                    <navigationItem key="navigationItem" id="72F-lV-5Qv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQV-Ra-zU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948.854961832061" y="462.67605633802822"/>
+            <point key="canvasLocation" x="2888" y="463"/>
+        </scene>
+        <!--369 게임-->
+        <scene sceneID="dtx-Ww-sXl">
+            <objects>
+                <viewController id="kOV-HR-IRc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="erj-IS-hfF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rOw-Tw-8dZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="369 게임" id="MJp-pp-OqP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rt-tM-YIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888" y="1263"/>
+        </scene>
+        <!--도시 정보-->
+        <scene sceneID="he3-nJ-SdY">
+            <objects>
+                <tableViewController id="jTn-3a-Ibd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6ai-bF-AWc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UAK-wf-MrI">
+                                <rect key="frame" x="0.0" y="50" width="393" height="44.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UAK-wf-MrI" id="eig-vk-Kc6">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jTn-3a-Ibd" id="4te-Qi-6ax"/>
+                            <outlet property="delegate" destination="jTn-3a-Ibd" id="OMY-Mt-rd0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="도시 정보" id="Hlj-SC-prX"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffq-hx-fw8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888" y="2081"/>
+        </scene>
+        <!--매거진-->
+        <scene sceneID="VkK-CB-adL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YFF-w9-3Me" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="매거진" image="magazine" catalog="system" id="ieQ-oG-8cd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pg2-Bj-VJE">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kFn-zY-5wc" kind="relationship" relationship="rootViewController" id="Euh-Pl-jKr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H26-ap-ODT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="463"/>
+        </scene>
+        <!--369-->
+        <scene sceneID="DTN-3i-idO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e6f-BO-TYs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="369" image="gamecontroller" catalog="system" id="vNC-Rx-asK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ks-ue-ALC">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kOV-HR-IRc" kind="relationship" relationship="rootViewController" id="2eI-K6-pS5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4P-wG-mTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="1263"/>
+        </scene>
+        <!--도시-->
+        <scene sceneID="b4Y-lN-fj9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aZ0-8s-b2C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="도시" image="airplane" catalog="system" id="6gf-Fw-Qyt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xes-Y7-372">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jTn-3a-Ibd" kind="relationship" relationship="rootViewController" id="b4P-h5-gzI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UPG-EW-6GQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="2081"/>
         </scene>
     </scenes>
     <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
         <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="gamecontroller" catalog="system" width="128" height="79"/>
         <image name="magazine" catalog="system" width="110" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
