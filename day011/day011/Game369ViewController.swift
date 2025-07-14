@@ -40,10 +40,35 @@ class Game369ViewController: UIViewController {
                 var clapCount = 0
                 
                 for i in 1...finalNumber {
-                    var num = i
-                    var
-                }
+                    let numbersinText = String(i)
+                    var middleText = ""
+                    
+                    for eachNumber in numbersinText {
+                        if eachNumber == "3" || eachNumber == "6" || eachNumber == "9" {
+                            middleText += "👏"
+                            clapCount += 1
+                        } else {
+                            middleText += String(eachNumber)
+                        }
+                    }
+                    
+                    resultText += middleText
+                    
+// 369 들어가면 다 박수 처리
+//                    if numbersinText.contains("3") || numbersinText.contains("6") || numbersinText.contains("9") {
+//                        resultText += "👏"
+//                        clapCount += 1
+//                    } else {
+//                        resultText += "\(i)"
+//                    }
+                    
+                    if i != finalNumber {
+                        resultText += ", "
+                    }
             }
+            
+            showNumbersTextView.text = resultText
+            resultLabel.text = "숫자 \(finalNumber)까지 총 박수는 \(clapCount)번입니다."
          
         }
         
