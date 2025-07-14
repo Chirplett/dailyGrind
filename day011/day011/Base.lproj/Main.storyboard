@@ -220,7 +220,7 @@
         <!--369 게임-->
         <scene sceneID="dtx-Ww-sXl">
             <objects>
-                <viewController id="kOV-HR-IRc" sceneMemberID="viewController">
+                <viewController id="kOV-HR-IRc" customClass="Game369ViewController" customModule="day011" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="erj-IS-hfF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
