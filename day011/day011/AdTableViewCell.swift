@@ -13,10 +13,10 @@ class AdTableViewCell: UITableViewCell {
     @IBOutlet var adTextLabel: UILabel!
     @IBOutlet var adBadgeLabel: UILabel!
     
+    static let identifier: String = "AdTableViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        let adBackgroundColors = []
         
         adBackgroundView.layer.cornerRadius = 10
         adBackgroundView.clipsToBounds = true
@@ -30,7 +30,10 @@ class AdTableViewCell: UITableViewCell {
         adBadgeLabel.text = "AD"
         adBadgeLabel.textColor = .black
         adBadgeLabel.textAlignment = .center
-        adBadgeLabel.layer.cornerRadius = 12
+        adBadgeLabel.layer.cornerRadius = 10
+        adBadgeLabel.layer.backgroundColor = UIColor.white.cgColor
+        adBadgeLabel.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        adBadgeLabel.clipsToBounds = true
         
         
     }
