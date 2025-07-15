@@ -17,6 +17,8 @@ class CityListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let nibName = 
+        
         self.navigationItem.title = "도시 상세 정보"
     }
     
