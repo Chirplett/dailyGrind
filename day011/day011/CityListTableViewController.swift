@@ -21,6 +21,8 @@ class CityListTableViewController: UITableViewController {
         tableView.register(nibName, forCellReuseIdentifier: AdTableViewCell.identifier)
         
         self.navigationItem.title = "도시 상세 정보"
+        navigationItem.backButtonTitle = ""
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,7 +74,7 @@ class CityListTableViewController: UITableViewController {
                 cell.ratingAndSavesLabel.text = "☆☆☆☆☆"
             }
             
-            var citySaves = cityData[indexPath.row].saves ?? 0
+            let citySaves = cityData[indexPath.row].saves ?? 0
             
             numberFormatter.numberStyle = .decimal
             let numberedSaves = numberFormatter.string(from: NSNumber(value: citySaves))!
@@ -120,14 +122,10 @@ class CityListTableViewController: UITableViewController {
             
             let viewController = storyBoard.instantiateViewController(withIdentifier: "CitySpotViewController") as! CitySpotViewController
             
-            
-            
-            
-            
+            viewController.passedTravel = cityData[indexPath.row]
+    
             navigationController?.pushViewController(viewController, animated: true)
-            
-            
-            
+
                         
         }
         

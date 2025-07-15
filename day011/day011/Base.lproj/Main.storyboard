@@ -394,9 +394,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNX-av-iPa">
-                                <rect key="frame" x="40" y="573" width="313" height="35"/>
+                                <rect key="frame" x="96.666666666666686" y="573" width="200" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vCK-8y-wKc"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="moreSpotsButtonTapped:" destination="oYF-Tn-3Z9" eventType="touchUpInside" id="u5o-wg-38c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mdu-O9-Ie8"/>
@@ -409,17 +415,23 @@
                             <constraint firstItem="JQZ-KX-IyH" firstAttribute="top" secondItem="mdu-O9-Ie8" secondAttribute="top" constant="40" id="6oV-cF-ms9"/>
                             <constraint firstItem="JQZ-KX-IyH" firstAttribute="leading" secondItem="mdu-O9-Ie8" secondAttribute="leading" constant="40" id="BHZ-Ft-QoH"/>
                             <constraint firstItem="mdu-O9-Ie8" firstAttribute="trailing" secondItem="JQZ-KX-IyH" secondAttribute="trailing" constant="40" id="F18-5v-jM7"/>
-                            <constraint firstItem="mdu-O9-Ie8" firstAttribute="trailing" secondItem="LNX-av-iPa" secondAttribute="trailing" constant="40" id="K07-U8-fj1"/>
+                            <constraint firstItem="mdu-O9-Ie8" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LNX-av-iPa" secondAttribute="trailing" constant="40" id="K07-U8-fj1"/>
                             <constraint firstItem="mdu-O9-Ie8" firstAttribute="trailing" secondItem="A7I-he-Pa8" secondAttribute="trailing" constant="40" id="MZM-uz-LMI"/>
                             <constraint firstItem="SNA-5k-gRL" firstAttribute="centerX" secondItem="hyH-KF-ers" secondAttribute="centerX" id="QvB-2t-AH5"/>
                             <constraint firstItem="LNX-av-iPa" firstAttribute="top" secondItem="A7I-he-Pa8" secondAttribute="bottom" constant="20" id="ZK6-0A-qRb"/>
-                            <constraint firstItem="LNX-av-iPa" firstAttribute="leading" secondItem="mdu-O9-Ie8" secondAttribute="leading" constant="40" id="aWP-7S-2pt"/>
+                            <constraint firstItem="LNX-av-iPa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mdu-O9-Ie8" secondAttribute="leading" constant="40" id="aWP-7S-2pt"/>
                             <constraint firstItem="SNA-5k-gRL" firstAttribute="leading" secondItem="mdu-O9-Ie8" secondAttribute="leading" constant="40" id="ct3-VY-8Ed"/>
                             <constraint firstItem="mdu-O9-Ie8" firstAttribute="trailing" secondItem="SNA-5k-gRL" secondAttribute="trailing" constant="40" id="jFs-ir-1zQ"/>
                             <constraint firstItem="LNX-av-iPa" firstAttribute="centerX" secondItem="hyH-KF-ers" secondAttribute="centerX" id="jSw-WT-qYw"/>
                             <constraint firstItem="JQZ-KX-IyH" firstAttribute="centerX" secondItem="hyH-KF-ers" secondAttribute="centerX" id="xEY-4I-1RO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moreSpotsButton" destination="LNX-av-iPa" id="Xcq-pA-EVc"/>
+                        <outlet property="spotCoverImageView" destination="JQZ-KX-IyH" id="gq2-oF-FNv"/>
+                        <outlet property="spotSubtitleLabel" destination="A7I-he-Pa8" id="GcJ-9S-dwn"/>
+                        <outlet property="spotTitleLabel" destination="SNA-5k-gRL" id="bTz-4C-FIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P9o-OR-Nzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
