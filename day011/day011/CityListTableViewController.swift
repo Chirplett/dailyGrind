@@ -102,13 +102,33 @@ class CityListTableViewController: UITableViewController {
         
         if cityData[indexPath.row].ad == true {
             
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "AdDetailViewController") as! AdDetailViewController
+            
+            viewController.passedAdTitle = cityData[indexPath.row].title
+            
+            viewController.modalPresentationStyle = .fullScreen
+            viewController.modalTransitionStyle = .coverVertical
+            
+            present(viewController, animated: true)
+            
             
         } else {
             
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
             
-            let viewController = storyBoard.instantiateViewController(withIdentifier: "") as! 
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "CitySpotViewController") as! CitySpotViewController
             
+            
+            
+            
+            
+            navigationController?.pushViewController(viewController, animated: true)
+            
+            
+            
+                        
         }
         
     }

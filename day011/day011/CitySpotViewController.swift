@@ -8,6 +8,10 @@
 import UIKit
 
 class CitySpotViewController: UIViewController {
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
