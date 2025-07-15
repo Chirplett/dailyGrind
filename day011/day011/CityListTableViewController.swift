@@ -96,10 +96,20 @@ class CityListTableViewController: UITableViewController {
             
         }
         
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
-        
-        
+        if cityData[indexPath.row].ad == true {
+            
+            
+        } else {
+            
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let viewController = storyBoard.instantiateViewController(withIdentifier: "") as! 
+            
+        }
         
     }
     
