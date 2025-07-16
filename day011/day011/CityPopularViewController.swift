@@ -49,4 +49,19 @@ class CityPopularViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "CityPopularDetailViewController") as! CityPopularDetailViewController
+        
+        viewController.linkedCityData = popularCityData[indexPath.row]
+        
+        viewController.modalPresentationStyle = .fullScreen
+        viewController.modalTransitionStyle = .coverVertical
+        
+        present(viewController, animated: true)
+        
+    }
+    
 }
