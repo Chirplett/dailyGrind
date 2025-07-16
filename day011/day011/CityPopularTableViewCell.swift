@@ -14,6 +14,7 @@ class CityPopularTableViewCell: UITableViewCell {
     @IBOutlet var cityExplainBgView: UIView!
     @IBOutlet var cityExplainLabel: UILabel!
     
+    static let identifier = "CityPopularTableViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()

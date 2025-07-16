@@ -565,6 +565,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pov-m5-Rc6"/>
+                    <connections>
+                        <outlet property="customTableView" destination="Ixr-DD-ufo" id="08C-MW-PYW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPv-RN-Rbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
