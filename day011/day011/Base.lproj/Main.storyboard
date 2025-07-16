@@ -23,6 +23,7 @@
                         <segue destination="YFF-w9-3Me" kind="relationship" relationship="viewControllers" id="QMw-Py-MiV"/>
                         <segue destination="e6f-BO-TYs" kind="relationship" relationship="viewControllers" id="2U0-JG-fHv"/>
                         <segue destination="aZ0-8s-b2C" kind="relationship" relationship="viewControllers" id="QPq-ow-vLU"/>
+                        <segue destination="f0H-DP-gbc" kind="relationship" relationship="viewControllers" id="beg-BE-l2a"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vn8-gH-xUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -539,12 +540,62 @@
             </objects>
             <point key="canvasLocation" x="1949" y="2081"/>
         </scene>
+        <!--City Popular View Controller-->
+        <scene sceneID="bRY-eN-7aY">
+            <objects>
+                <viewController storyboardIdentifier="CityPopularViewController" id="8Ji-Rb-u8g" customClass="CityPopularViewController" customModule="day011" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfE-dP-zwb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-DD-ufo">
+                                <rect key="frame" x="20" y="182" width="353" height="198.66666666666663"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ixr-DD-ufo" secondAttribute="height" multiplier="16:9" id="qHY-t8-G3h"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tvJ-pW-WO0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tvJ-pW-WO0" firstAttribute="trailing" secondItem="Ixr-DD-ufo" secondAttribute="trailing" constant="20" id="G2H-vY-3br"/>
+                            <constraint firstItem="Ixr-DD-ufo" firstAttribute="top" secondItem="tvJ-pW-WO0" secondAttribute="top" constant="20" id="b5Z-KI-YWS"/>
+                            <constraint firstItem="Ixr-DD-ufo" firstAttribute="leading" secondItem="tvJ-pW-WO0" secondAttribute="leading" constant="20" id="kbr-kr-3V2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pov-m5-Rc6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPv-RN-Rbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2895.419847328244" y="2855.6338028169016"/>
+        </scene>
+        <!--인기-->
+        <scene sceneID="ZzU-3Y-Dnj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f0H-DP-gbc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="인기" image="trophy" catalog="system" id="31k-wY-NO3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="akD-r3-EhT">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Ji-Rb-u8g" kind="relationship" relationship="rootViewController" id="3ij-fb-qGQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pb-pO-lYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="2856"/>
+        </scene>
     </scenes>
     <resources>
         <image name="airplane" catalog="system" width="128" height="115"/>
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="gamecontroller" catalog="system" width="128" height="79"/>
         <image name="magazine" catalog="system" width="110" height="128"/>
+        <image name="trophy" catalog="system" width="128" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
