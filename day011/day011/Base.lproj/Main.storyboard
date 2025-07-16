@@ -571,6 +571,67 @@
             </objects>
             <point key="canvasLocation" x="2895.419847328244" y="2855.6338028169016"/>
         </scene>
+        <!--City Popular Detail View Controller-->
+        <scene sceneID="oC6-Mv-jEv">
+            <objects>
+                <viewController storyboardIdentifier="CityPopularDetailViewController" id="Ldn-1w-i49" customClass="CityPopularDetailViewController" customModule="day011" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CQ3-Er-tgk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obW-2Z-h7p">
+                                <rect key="frame" x="20" y="138" width="353" height="353"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="obW-2Z-h7p" secondAttribute="height" multiplier="1:1" id="zwc-qb-liB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpc-Tt-D22">
+                                <rect key="frame" x="20" y="501" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojb-ZP-r9C">
+                                <rect key="frame" x="20" y="532" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3u-vk-fMg">
+                                <rect key="frame" x="20" y="563" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Df7-wa-dAa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ojb-ZP-r9C" firstAttribute="top" secondItem="Dpc-Tt-D22" secondAttribute="bottom" constant="10" id="3ii-ba-fxR"/>
+                            <constraint firstItem="Df7-wa-dAa" firstAttribute="trailing" secondItem="Ojb-ZP-r9C" secondAttribute="trailing" constant="20" id="CZR-58-WWE"/>
+                            <constraint firstItem="Df7-wa-dAa" firstAttribute="trailing" secondItem="Dpc-Tt-D22" secondAttribute="trailing" constant="20" id="FnG-aH-ub2"/>
+                            <constraint firstItem="Df7-wa-dAa" firstAttribute="trailing" secondItem="obW-2Z-h7p" secondAttribute="trailing" constant="20" id="Mlz-p2-GEm"/>
+                            <constraint firstItem="P3u-vk-fMg" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="PLe-bp-H8Q"/>
+                            <constraint firstItem="obW-2Z-h7p" firstAttribute="top" secondItem="Df7-wa-dAa" secondAttribute="top" constant="20" id="Y5B-UP-bNi"/>
+                            <constraint firstItem="Dpc-Tt-D22" firstAttribute="top" secondItem="obW-2Z-h7p" secondAttribute="bottom" constant="10" id="YSO-4e-eee"/>
+                            <constraint firstItem="Dpc-Tt-D22" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="fTX-uV-1EJ"/>
+                            <constraint firstItem="Ojb-ZP-r9C" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="gNh-Wr-bRA"/>
+                            <constraint firstItem="obW-2Z-h7p" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="pcC-tQ-1fS"/>
+                            <constraint firstItem="Df7-wa-dAa" firstAttribute="trailing" secondItem="P3u-vk-fMg" secondAttribute="trailing" constant="20" id="wbd-Xu-M4R"/>
+                            <constraint firstItem="P3u-vk-fMg" firstAttribute="top" secondItem="Ojb-ZP-r9C" secondAttribute="bottom" constant="10" id="xYn-Uv-sBl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailCityEngTitleLabel" destination="Ojb-ZP-r9C" id="UJY-YX-4sS"/>
+                        <outlet property="detailCityExplainLabel" destination="P3u-vk-fMg" id="2fa-Qk-b2J"/>
+                        <outlet property="detailCityTitleLabel" destination="Dpc-Tt-D22" id="Ckw-u1-Ei7"/>
+                        <outlet property="detailCoverImageView" destination="obW-2Z-h7p" id="Gca-f1-rg9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXf-y0-4cj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3862" y="2856"/>
+        </scene>
         <!--인기-->
         <scene sceneID="ZzU-3Y-Dnj">
             <objects>
@@ -604,7 +665,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
