@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CityPopularTableViewCell: UITableViewCell {
 
@@ -21,25 +22,38 @@ class CityPopularTableViewCell: UITableViewCell {
         
         cityNamesLabel.text = ""
         cityNamesLabel.textColor = .white
-        cityNamesLabel.font = .systemFont(ofSize: 24, weight: .heavy)
-        cityNamesLabel.textAlignment = .center
+        cityNamesLabel.font = .systemFont(ofSize: 20, weight: .bold)
+        cityNamesLabel.textAlignment = .right
         
-        cityImageView.contentMode = .scaleAspectFit
+        cityImageView.contentMode = .scaleAspectFill
         cityImageView.layer.cornerRadius = 12
         cityImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
         cityImageView.clipsToBounds = true
         
-        cityExplainBgView.backgroundColor = .systemGray6
-        cityExplainBgView.layer.opacity = 0.5
+        cityExplainBgView.backgroundColor = .black
+        cityExplainBgView.layer.opacity = 0.7
         cityExplainBgView.layer.cornerRadius = 12
         cityExplainBgView.layer.maskedCorners = [.layerMaxXMaxYCorner]
         cityExplainBgView.clipsToBounds = true
         
         cityExplainLabel.text = ""
         cityExplainLabel.textColor = .white
-        cityExplainLabel.font = .systemFont(ofSize: 12, weight: .medium)
+        cityExplainLabel.font = .systemFont(ofSize: 12, weight: .semibold)
         cityExplainLabel.textAlignment = .left
 
+        
+    }
+    
+    func configure(city: City) {
+        
+        cityNamesLabel.text = city.city_name + " | " + city.city_english_name
+        
+        let url = URL(string: city.city_image)
+        
+        cityImageView.kf.setImage(with: url)
+        
+        cityExplainLabel.text = city.city_explain
+        
         
     }
 

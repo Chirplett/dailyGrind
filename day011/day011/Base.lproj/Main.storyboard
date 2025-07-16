@@ -549,17 +549,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-DD-ufo">
-                                <rect key="frame" x="20" y="182" width="353" height="198.66666666666663"/>
+                                <rect key="frame" x="20" y="182" width="353" height="533"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Ixr-DD-ufo" secondAttribute="height" multiplier="16:9" id="qHY-t8-G3h"/>
-                                </constraints>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tvJ-pW-WO0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tvJ-pW-WO0" firstAttribute="trailing" secondItem="Ixr-DD-ufo" secondAttribute="trailing" constant="20" id="G2H-vY-3br"/>
+                            <constraint firstItem="tvJ-pW-WO0" firstAttribute="bottom" secondItem="Ixr-DD-ufo" secondAttribute="bottom" constant="20" id="Qew-ev-R7E"/>
                             <constraint firstItem="Ixr-DD-ufo" firstAttribute="top" secondItem="tvJ-pW-WO0" secondAttribute="top" constant="20" id="b5Z-KI-YWS"/>
                             <constraint firstItem="Ixr-DD-ufo" firstAttribute="leading" secondItem="tvJ-pW-WO0" secondAttribute="leading" constant="20" id="kbr-kr-3V2"/>
                         </constraints>

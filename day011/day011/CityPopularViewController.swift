@@ -6,9 +6,8 @@
 //
 
 import UIKit
-import Kingfisher
 
-class CityPopularViewController: UIViewController {
+class CityPopularViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var customTableView: UITableView!
     
@@ -22,12 +21,32 @@ class CityPopularViewController: UIViewController {
         
         self.navigationItem.title = "인기 도시"
         
+        customTableView.delegate = self
+        customTableView.dataSource = self
+        
+        self.customTableView.separatorColor = .clear
         
     }
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return popularCityData.count
+    }
     
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = customTableView.dequeueReusableCell(withIdentifier: "CityPopularTableViewCell", for: indexPath) as! CityPopularTableViewCell
+        
+        cell.configure(city: popularCityData[indexPath.row])
     
+        return cell
+        
+     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableView.automaticDimension
+        
+    }
     
 }
