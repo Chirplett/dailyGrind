@@ -586,19 +586,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpc-Tt-D22">
-                                <rect key="frame" x="20" y="501" width="353" height="21"/>
+                                <rect key="frame" x="20" y="511" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojb-ZP-r9C">
-                                <rect key="frame" x="20" y="532" width="353" height="21"/>
+                                <rect key="frame" x="20" y="537" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3u-vk-fMg">
-                                <rect key="frame" x="20" y="563" width="353" height="21"/>
+                                <rect key="frame" x="20" y="568" width="353" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -607,13 +607,13 @@
                         <viewLayoutGuide key="safeArea" id="Df7-wa-dAa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ojb-ZP-r9C" firstAttribute="top" secondItem="Dpc-Tt-D22" secondAttribute="bottom" constant="10" id="3ii-ba-fxR"/>
+                            <constraint firstItem="Ojb-ZP-r9C" firstAttribute="top" secondItem="Dpc-Tt-D22" secondAttribute="bottom" constant="5" id="3ii-ba-fxR"/>
                             <constraint firstItem="Df7-wa-dAa" firstAttribute="trailing" secondItem="Ojb-ZP-r9C" secondAttribute="trailing" constant="20" id="CZR-58-WWE"/>
                             <constraint firstItem="Df7-wa-dAa" firstAttribute="trailing" secondItem="Dpc-Tt-D22" secondAttribute="trailing" constant="20" id="FnG-aH-ub2"/>
                             <constraint firstItem="Df7-wa-dAa" firstAttribute="trailing" secondItem="obW-2Z-h7p" secondAttribute="trailing" constant="20" id="Mlz-p2-GEm"/>
                             <constraint firstItem="P3u-vk-fMg" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="PLe-bp-H8Q"/>
                             <constraint firstItem="obW-2Z-h7p" firstAttribute="top" secondItem="Df7-wa-dAa" secondAttribute="top" constant="20" id="Y5B-UP-bNi"/>
-                            <constraint firstItem="Dpc-Tt-D22" firstAttribute="top" secondItem="obW-2Z-h7p" secondAttribute="bottom" constant="10" id="YSO-4e-eee"/>
+                            <constraint firstItem="Dpc-Tt-D22" firstAttribute="top" secondItem="obW-2Z-h7p" secondAttribute="bottom" constant="20" id="YSO-4e-eee"/>
                             <constraint firstItem="Dpc-Tt-D22" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="fTX-uV-1EJ"/>
                             <constraint firstItem="Ojb-ZP-r9C" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="gNh-Wr-bRA"/>
                             <constraint firstItem="obW-2Z-h7p" firstAttribute="leading" secondItem="Df7-wa-dAa" secondAttribute="leading" constant="20" id="pcC-tQ-1fS"/>

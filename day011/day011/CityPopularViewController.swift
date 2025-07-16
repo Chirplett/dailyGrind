@@ -57,10 +57,7 @@ class CityPopularViewController: UIViewController, UITableViewDelegate, UITableV
         
         viewController.linkedCityData = popularCityData[indexPath.row]
         
-        viewController.modalPresentationStyle = .fullScreen
-        viewController.modalTransitionStyle = .coverVertical
-        
-        present(viewController, animated: true)
+        navigationController?.pushViewController(viewController, animated: true)
         
     }
     

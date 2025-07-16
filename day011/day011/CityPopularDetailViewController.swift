@@ -27,11 +27,11 @@ class CityPopularDetailViewController: UIViewController {
         detailCoverImageView.layer.cornerRadius = 10
         
         detailCityTitleLabel.text = linkedCityData?.city_name
-        detailCityTitleLabel.font = .systemFont(ofSize: 16, weight: .bold)
+        detailCityTitleLabel.font = .systemFont(ofSize: 16, weight: .semibold)
         detailCityTitleLabel.textAlignment = .center
         
         detailCityEngTitleLabel.text = linkedCityData?.city_english_name
-        detailCityEngTitleLabel.font = .systemFont(ofSize: 16, weight: .bold)
+        detailCityEngTitleLabel.font = .systemFont(ofSize: 14, weight: .semibold)
         detailCityEngTitleLabel.textAlignment = .center
         
         detailCityExplainLabel.text = linkedCityData?.city_explain
