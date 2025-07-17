@@ -6,26 +6,42 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BestCityCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var cityPicImageView: UIImageView!
-    @IBOutlet var cityNameLabel: UILabel!
-    @IBOutlet var cityExplainLabel: UILabel!
+    @IBOutlet var bestCityImageView: UIImageView!
+    @IBOutlet var bestCityNameLabel: UILabel!
+    @IBOutlet var bestCityExplainLabel: UILabel!
+    
+    static let identifier = "BestCityCollectionViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        cityPicImageView.contentMode = .scaleAspectFill
+        bestCityImageView.contentMode = .scaleAspectFill
         
-        cityNameLabel.textAlignment = .center
-        cityNameLabel.font = .systemFont(ofSize: 16, weight: .bold)
+        bestCityNameLabel.textAlignment = .center
+        bestCityNameLabel.font = .systemFont(ofSize: 16, weight: .bold)
         
-        cityExplainLabel.textAlignment = .center
-        cityExplainLabel.font = .systemFont(ofSize: 12, weight: .regular)
-        cityExplainLabel.numberOfLines = 0
-        cityExplainLabel.textColor = .systemGray6
+        bestCityExplainLabel.textAlignment = .center
+        bestCityExplainLabel.font = .systemFont(ofSize: 12, weight: .regular)
+        bestCityExplainLabel.numberOfLines = 0
+        bestCityExplainLabel.textColor = .gray
         
     }
+    
+    func configure(city: City) {
+        
+        let url = URL(string: city.city_image)
+        
+        bestCityImageView.kf.setImage(with: url)
+  
+        bestCityNameLabel.text = city.city_name + " | " + city.city_english_name
+        
+        bestCityExplainLabel.text = city.city_explain
+        
+    }
+    
 
 }

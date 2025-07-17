@@ -550,7 +550,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ixr-DD-ufo">
-                                <rect key="frame" x="20" y="182" width="353" height="533"/>
+                                <rect key="frame" x="20" y="138" width="353" height="626"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -581,14 +581,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RPR-ii-lfO">
-                                <rect key="frame" x="20" y="138" width="353" height="32"/>
+                                <rect key="frame" x="20" y="182" width="353" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="모두"/>
+                                    <segment title="국내"/>
+                                    <segment title="해외"/>
                                 </segments>
+                                <connections>
+                                    <action selector="regionSegmentedControlTapped:" destination="HyD-YT-QGg" eventType="valueChanged" id="pPE-NP-iqj"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V9W-if-3IM">
-                                <rect key="frame" x="20" y="189" width="353" height="575"/>
+                                <rect key="frame" x="0.0" y="233" width="393" height="502"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="384-1u-rHn">
                                     <size key="itemSize" width="128" height="128"/>
@@ -598,10 +602,10 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b3V-Be-5Vf">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="N2s-jD-BhB">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
@@ -612,16 +616,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MHZ-2B-XMt" firstAttribute="trailing" secondItem="RPR-ii-lfO" secondAttribute="trailing" constant="20" id="4cB-3m-ZWz"/>
-                            <constraint firstItem="MHZ-2B-XMt" firstAttribute="bottom" secondItem="V9W-if-3IM" secondAttribute="bottom" constant="20" id="IZ5-E4-iLD"/>
+                            <constraint firstItem="MHZ-2B-XMt" firstAttribute="bottom" secondItem="V9W-if-3IM" secondAttribute="bottom" id="IZ5-E4-iLD"/>
                             <constraint firstItem="RPR-ii-lfO" firstAttribute="top" secondItem="MHZ-2B-XMt" secondAttribute="top" constant="20" id="SiY-DB-ws2"/>
                             <constraint firstItem="RPR-ii-lfO" firstAttribute="leading" secondItem="MHZ-2B-XMt" secondAttribute="leading" constant="20" id="fj2-L2-Tru"/>
-                            <constraint firstItem="MHZ-2B-XMt" firstAttribute="trailing" secondItem="V9W-if-3IM" secondAttribute="trailing" constant="20" id="noo-IA-4UG"/>
+                            <constraint firstItem="MHZ-2B-XMt" firstAttribute="trailing" secondItem="V9W-if-3IM" secondAttribute="trailing" id="noo-IA-4UG"/>
                             <constraint firstItem="V9W-if-3IM" firstAttribute="top" secondItem="RPR-ii-lfO" secondAttribute="bottom" constant="20" id="osr-5u-w9h"/>
-                            <constraint firstItem="V9W-if-3IM" firstAttribute="leading" secondItem="MHZ-2B-XMt" secondAttribute="leading" constant="20" id="qVT-Rw-AyG"/>
+                            <constraint firstItem="V9W-if-3IM" firstAttribute="leading" secondItem="MHZ-2B-XMt" secondAttribute="leading" id="qVT-Rw-AyG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3SO-Bb-2e1"/>
                     <connections>
-                        <outlet property="cityCircleCollectionView" destination="V9W-if-3IM" id="fuH-nu-dhJ"/>
+                        <outlet property="bestCityCircleCollectionView" destination="V9W-if-3IM" id="fuH-nu-dhJ"/>
                         <outlet property="regionSegmentedControl" destination="RPR-ii-lfO" id="dWD-fm-GwY"/>
                     </connections>
                 </viewController>
@@ -702,7 +707,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8Ji-Rb-u8g" kind="relationship" relationship="rootViewController" id="3ij-fb-qGQ"/>
+                        <segue destination="HyD-YT-QGg" kind="relationship" relationship="rootViewController" id="Rwm-cj-p85"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Pb-pO-lYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
