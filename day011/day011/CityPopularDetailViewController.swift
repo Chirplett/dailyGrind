@@ -21,11 +21,13 @@ class CityPopularDetailViewController: UIViewController {
         super.viewDidLoad()
         
         let url = URL(string: linkedCityData?.city_image ?? "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/640px-No-Image-Placeholder.svg.png")
+        //이미지 다운샘플링 찾아보기
         
         detailCoverImageView.contentMode = .scaleAspectFill
         detailCoverImageView.kf.setImage(with: url)
         detailCoverImageView.layer.cornerRadius = 10
         
+        //font만 static let이나 extension 이용해서 빼보기
         detailCityTitleLabel.text = linkedCityData?.city_name
         detailCityTitleLabel.font = .systemFont(ofSize: 16, weight: .semibold)
         detailCityTitleLabel.textAlignment = .center

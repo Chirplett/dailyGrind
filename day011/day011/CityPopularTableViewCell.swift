@@ -20,6 +20,8 @@ class CityPopularTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        selectionStyle = .none
+        
         cityNamesLabel.text = ""
         cityNamesLabel.textColor = .white
         cityNamesLabel.font = .systemFont(ofSize: 20, weight: .bold)
@@ -51,6 +53,7 @@ class CityPopularTableViewCell: UITableViewCell {
         let url = URL(string: city.city_image)
         
         cityImageView.kf.setImage(with: url)
+        //kf 뜯어보기~ 코드 보고 어떻게 라이브러리화 하는 지 보기
         
         cityExplainLabel.text = city.city_explain
         
